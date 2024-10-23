@@ -44,9 +44,8 @@ public class Main {
 //        System.out.println("updatedMember = " + updatedMember);
 
         //get all members
-//        List<Member> members=  memberService.findAll();
-//        members.forEach(System.out::println);
-
+        List<Member> members=  memberService.findAll();
+        members.forEach(System.out::println);
 
 
 

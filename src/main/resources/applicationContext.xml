@@ -4,6 +4,7 @@
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/tx
@@ -11,11 +12,19 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/data/jpa
-       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <!-- Enable component scanning for Spring annotations -->
 <context:component-scan base-package="org.youcode"/>
 
+    <!-- Enable transaction annotations -->
+    <tx:annotation-driven/>
+
+    <!-- Enable AspectJ auto-proxying
+    <aop:aspectj-autoproxy/>
+    -->
+    <!-- Other beans -->
+    <context:component-scan base-package="org.youcode.controller"/>
 
 <!-- Enable Spring Data JPA repositories -->
 <jpa:repositories base-package="org.youcode.repository"/>
@@ -49,7 +58,13 @@
     </property>
 </bean>
 
-<!-- Transaction Manager Configuration -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+
+    <!-- Transaction Manager Configuration -->
 <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
     <property name="entityManagerFactory" ref="entityManagerFactory"/>
 </bean>
