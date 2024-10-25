@@ -1,30 +1,40 @@
-This application is a basic User Management System built using Spring Core , Spring MVC, and Spring Data JPA. It allows users to perform CRUD operations such as creating, viewing, updating, and deleting users through a web interface.
-## Project Structure
-  **src/main/java: Contains your Java code.**
-- org.youcode.controller: Holds the controller classes to manage incoming requests and direct them to the appropriate services or views.
-- org.youcode.domain: Likely contains your domain models, such as Membre.
-- org.youcode.repository: This is where your data access logic resides, most likely Spring Data repositories.
-- org.youcode.service: Contains service layer classes for business logic, interacting between the repository and controller.
-  
-   **src/main/resources:**
-- applicationContext.xml: Central configuration file for Spring, likely defining beans, database configurations, and service layers.
-  
-  **src/main/webapp:**
-- WEB-INF/views: Contains JSP files. In this case, listMembers.jsp is the view for displaying a list of members.
-- dispatcher-servlet.xml: Configures Spring MVC's DispatcherServlet, handling web requests and directing them to appropriate controllers and views.
-- web.xml: Configures the servlet mapping, pointing to your DispatcherServlet.
-  
-  **pom.xml: Maven build file managing dependencies and project configuration.**
+Cette application est un système de gestion d'utilisateurs de base, construit avec Spring Core, Spring MVC et Spring Data JPA. Elle permet aux utilisateurs d'effectuer des opérations CRUD telles que la création, la visualisation, la mise à jour et la suppression d'utilisateurs via une interface web.
 
-## Technologies Used
-**Spring Core: Dependency Injection**
-**Spring Data: Data source configuration and data handling**
-**Spring MVC: Presentation layer**
-**PostgreSQL: Database**
-**Apache Tomcat: Web server**
+## Structure du Projet
 
-## Project Setup
-- **Java JDK 17**
-- **Apache Tomcat Server**
-- **PostgreSQL Database**
-- **Maven**
+**src/main/java : Contient votre code Java.**
+
+- org.youcode.controller : Contient les classes de contrôleurs pour gérer les requêtes entrantes et les diriger vers les services ou vues appropriés.
+
+- org.youcode.domain : Contient probablement vos modèles de domaine, tels que Membre.
+
+- org.youcode.repository : Ici réside votre logique d'accès aux données, probablement des dépôts Spring Data.
+
+- org.youcode.service : Contient les classes de la couche service pour la logique métier, servant d'intermédiaire entre le dépôt et le contrôleur.
+
+**src/main/resources :**
+
+- applicationContext.xml : Fichier de configuration central pour Spring, définissant probablement les beans, les configurations de la base de données et les couches de service.
+
+**src/main/webapp :**
+
+- WEB-INF/views : Contient les fichiers JSP. Dans ce cas, listMembers.jsp est la vue pour afficher la liste des membres.
+
+- dispatcher-servlet.xml : Configure le DispatcherServlet de Spring MVC, gérant les requêtes web et les dirigeant vers les contrôleurs et vues appropriés.
+
+- web.xml : Configure le mapping des servlets, pointant vers votre DispatcherServlet.
+
+**pom.xml :** Fichier de build Maven gérant les dépendances et la configuration du projet.
+
+## Technologies Utilisées
+**Spring Core :** Injection de dépendances
+**Spring Data :** Configuration de la source de données et gestion des données
+**Spring MVC :** Couche de présentation
+**PostgreSQL :** Base de données
+**Apache Tomcat :** Serveur web
+
+## Configuration du Projet
+**Java JDK 17**
+**Serveur Apache Tomcat**
+**Base de données PostgreSQL**
+**Maven**
