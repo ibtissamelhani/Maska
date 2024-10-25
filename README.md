@@ -26,6 +26,21 @@ Cette application est un système de gestion d'utilisateurs de base, construit a
 
 **pom.xml :** Fichier de build Maven gérant les dépendances et la configuration du projet.
 
+## Injection de dépendances (DI)
+L'injection de dépendances (DI) est un modèle de conception utilisé pour implémenter l'IoC, permettant la création d'objets dépendants en dehors d'une classe et fournissant ces objets à une classe de différentes manières.
+
+## Inversion de contrôle (IoC)
+un principe où la responsabilité de gérer les dépendances est inversée, ce qui signifie que la classe ne contrôle plus comment et quand ses dépendances sont fournies
+
+## Bean
+Bean est un objet géré par le conteneur Spring IoC (Inversion of Control). Ces objets sont créés, configurés et maintenus par le framework Spring.
+
+## Bean scope
+Bean scope dans Spring définit le cycle de vie et le nombre d’instances qu’un bean aura dans le conteneur Spring. Il contrôle le nombre d’instances d’un haricot qui sont créées et combien de temps elles seront disponibles.
+
+## ApplicationContext
+ApplicationContext est l’interface centrale pour accéder au conteneur Spring Dependency Injection (DI).
+
 ## Technologies Utilisées
 **Spring Core :** Injection de dépendances
 **Spring Data :** Configuration de la source de données et gestion des données
