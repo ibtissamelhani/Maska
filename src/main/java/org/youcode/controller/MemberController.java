@@ -9,15 +9,13 @@ import org.youcode.service.MemberService;
 
 import java.util.List;
 
+
+
 @Controller
 public class MemberController {
 
-
+    @Autowired
     private MemberService membreService;
-
-    public MemberController(MemberService membreService) {
-        this.membreService = membreService;
-    }
 
     @GetMapping("/")
     public String redirectToMembers() {
