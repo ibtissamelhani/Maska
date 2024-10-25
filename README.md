@@ -17,11 +17,11 @@ This application is a basic User Management System built using Spring Core , Spr
   **pom.xml: Maven build file managing dependencies and project configuration.**
 
 ## Technologies Used
--**Spring Core: Dependency Injection**
--**Spring Data: Data source configuration and data handling**
--**Spring MVC: Presentation layer**
--**PostgreSQL: Database**
--**Apache Tomcat: Web server**
+**Spring Core: Dependency Injection**
+**Spring Data: Data source configuration and data handling**
+**Spring MVC: Presentation layer**
+**PostgreSQL: Database**
+**Apache Tomcat: Web server**
 
 ## Project Setup
 - **Java JDK 17**
