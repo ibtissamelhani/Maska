@@ -1,4 +1,4 @@
-This application is a basic User Management System built using Spring Core without, Spring MVC, and Spring Data JPA. It allows users to perform CRUD operations such as creating, viewing, updating, and deleting users through a web interface.
+This application is a basic User Management System built using Spring Core , Spring MVC, and Spring Data JPA. It allows users to perform CRUD operations such as creating, viewing, updating, and deleting users through a web interface.
 ## Project Structure
  **src/main/java: Contains your Java code.**
 - org.youcode.controller: Holds the controller classes to manage incoming requests and direct them to the appropriate services or views.
