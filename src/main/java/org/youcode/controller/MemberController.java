@@ -9,26 +9,15 @@ import org.youcode.service.MemberService;
 
 import java.util.List;
 
-//@Controller
-//@RequestMapping("/members")
-//public class MemberController {
-//
-//    @Autowired
-//    private MemberService memberService;
-//
-//
-//    @GetMapping
-//    public String listMembers(Model model) {
-//        List<Member> members = memberService.findAll();
-//        model.addAttribute("members", members);
-//        return "listMember";
-//    }
-
 @Controller
 public class MemberController {
 
-    @Autowired
+
     private MemberService membreService;
+
+    public MemberController(MemberService membreService) {
+        this.membreService = membreService;
+    }
 
     @GetMapping("/")
     public String redirectToMembers() {

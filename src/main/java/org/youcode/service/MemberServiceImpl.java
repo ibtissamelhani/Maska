@@ -13,8 +13,12 @@ import java.util.Optional;
 @Transactional
 public class MemberServiceImpl implements MemberService {
 
-    @Autowired
+
     private MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public List<Member> findAll() {

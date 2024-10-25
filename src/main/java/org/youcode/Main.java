@@ -18,14 +18,13 @@ public class Main {
 
         // Create a new Membre instance
         Member member = Member.builder()
-                .id(3L)
-                .firstName("updatedFirstName")
-                .lastName("updatedLastName")
+                .firstName("testname")
+                .lastName("LastName")
                 .licenseExpirationDate(LocalDate.now())
                 .membershipDate(LocalDate.now().plusDays(1))
                 .nationality("updatedNationality")
                 .pieceIdentification("updatedPieceIdentification")
-                .membershipNumber("zfv3456")
+                .membershipNumber("cfgvbh")
                 .build();
 
         // Save the Member instance
